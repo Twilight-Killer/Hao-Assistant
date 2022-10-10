@@ -103,8 +103,8 @@ Bot manajemen grup modular dengan fitur berguna. [ㅤ](https://te.legra.ph/file/
 ◑ `{}` *Users, across* `{}` *chats.*
 
 Apakah kamu ingin menggunakan nya?
-Jika ingin menggunakan nya hubungi owner [DarkiezZzz](https://t.me/DarkiezZzz).
-Click help button to know my commands!
+Jika ingin menggunakan hubungi owner [DarkiezZzz](https://t.me/DarkiezZzz).
+Klik tombol bantuan untuk mengetahui perintah saya!
 """
 
 buttons = [
@@ -158,7 +158,7 @@ for module_name in ALL_MODULES:
     if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Tidak dapat memiliki dua modul dengan nama yang sama! Tolong ubah satu")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module
@@ -311,7 +311,7 @@ def help_button(update: Update, context: CallbackContext):
         if mod_match:
             module = mod_match[1]
             text = (
-                "Here is the help for the *{}* module:\n".format(
+                "Berikut adalah bantuan untuk *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -450,14 +450,14 @@ def send_settings(chat_id, user_id, user=False):
             )
             dispatcher.bot.send_message(
                 user_id,
-                "These are your current settings:" + "\n\n" + settings,
+                "Ini adalah pengaturan Anda saat ini:" + "\n\n" + settings,
                 parse_mode=ParseMode.MARKDOWN,
             )
 
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Seems like there aren't any user specific settings available :'(",
+                "Sepertinya tidak ada pengaturan khusus pengguna yang tersedia :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -465,7 +465,7 @@ def send_settings(chat_id, user_id, user=False):
         chat_name = dispatcher.bot.getChat(chat_id).title
         dispatcher.bot.send_message(
             user_id,
-            text=f"Which module would you like to check {chat_name}'s settings for?",
+            text=f"Modul mana yang ingin Anda periksa {chat_name}'s pengaturan untuk?",
             reply_markup=InlineKeyboardMarkup(
                 paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
             ),
@@ -568,7 +568,7 @@ def get_settings(update: Update, context: CallbackContext):
         send_settings(chat.id, user.id, True)
 
     elif is_user_admin(chat, user.id):
-        text = "Click here to get this chat's settings, as well as yours."
+        text = "Klik di sini untuk mendapatkan pengaturan obrolan ini, serta pengaturan Anda."
         msg.reply_text(
             text,
             reply_markup=InlineKeyboardMarkup(
