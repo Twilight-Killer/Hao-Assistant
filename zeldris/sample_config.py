@@ -1,6 +1,6 @@
-# ZeldrisRobot
+# Haotogel
 # Copyright (C) 2017-2019, Paul Larsen
-# Copyright (C) 2022, IDNCoderX Team, <https://github.com/IDN-C-X/ZeldrisRobot>
+# Copyright (C) 2022, HaoTogelLivedraw Team, <https://github.com/Twilight-Killer/Hao-Assistant>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -50,7 +50,7 @@ class Config(object):
     URL = None
     MONGO_URI = ""
     MONGO_PORT = 27017  # leave it as it is
-    MONGO_DB = "Zeldris"
+    MONGO_DB = "Moon-Knight"
 
     # OPTIONAL
     DEV_USERS = (
