@@ -128,9 +128,9 @@ buttons = [
 
 HELP_STRINGS = f"""
 I'm *{dispatcher.bot.first_name}*.
-Have a look at the following for an idea of some of \
-the things I can help you with.
-*Main* commands available:
+Lihatlah yang berikut ini untuk mendapatkan ide dari beberapa \
+hal-hal yang dapat saya bantu..
+*Main* perintah yang tersedia:
 × /start: Starts me, can be used to check i'm alive or no...
 × /help: PM's you this message.
 × /help <module name>: PM's you info about that module.
@@ -424,7 +424,7 @@ def get_help(update: Update, context: CallbackContext):
     if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "Here is the available help for the *{}* module:\n".format(
+            "Berikut adalah bantuan yang tersedia untuk *{}* module:\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
