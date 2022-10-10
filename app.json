@@ -1,8 +1,8 @@
 
 {
   "name": "Haotogel-Assistant",
-  "description": "Telegram group management bot HAOTOGEL LIVEDRAW.",
-  "logo": "https://telegra.ph/file/016628a91c2d0ed99c3cf.jpg",
+  "description": "Bot management HAOTOGEL LIVEDRAW.",
+  "logo": "https://te.legra.ph/file/9beca55a63ff323ec10f3.jpg",
   "keywords": [
     "telegram",
     "anime",
@@ -56,7 +56,7 @@
     "OWNER_ID": {
       "description": "Your user ID as an integer.",
       "required": true,
-      "value": "645739169"
+      "value": "1128130156"
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -68,12 +68,12 @@
     },
     "OWNER_USERNAME": {
       "description": "Your username without the @",
-      "value": "Anomaliii"
+      "value": "DarkiezZzz"
     },
     "SUPPORT_CHAT": {
       "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to zeldris support than consider you made an enemy.",
       "required": true,
-      "value": "IDNCoderX"
+      "value": "HaoTogelLivedraw"
     },
     "MESSAGE_DUMP": {
       "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -145,7 +145,7 @@
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
       "required": false,
-      "value": "https://t.me/IDNCoderX"
+      "value": "https://t.me/DarkiezZzz"
     },
     "DEL_CMDS": {
       "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -169,12 +169,12 @@
     "REDIS_URL": {
       "description": "Take it from redislabs.com and the format should be redis://username:password@publicendpoint:port/",
       "required": true,
-      "value": ""
+      "value": "redis-19987.c12.us-east-1-4.ec2.cloud.redislabs.com:19987"
     },
     "MONGO_DB": {
       "description": "Your mongodb name",
       "required": true,
-      "value": "Zeldris"
+      "value": "Moon-Knight"
     },
     "MONGO_PORT": {
       "description": "Your mongodb port, better don't touch it",
@@ -184,7 +184,7 @@
     "MONGO_URI": {
       "description": "Your mongodb url",
       "required": true,
-      "value": ""
+      "value": "mongodb+srv://Moon-Knight:Twilight-Killer@moon-knight.3jplvnv.mongodb.net/?retryWrites=true&w=majority"
     }
   }
 }
