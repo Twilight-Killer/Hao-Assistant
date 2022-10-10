@@ -245,10 +245,10 @@ def new_member(
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="☎️ Support", url="https://t.me/IDNCoderX"
+                                    text="Group", url="https://t.me/HaoTogelLivedraw"
                                 ),
                                 InlineKeyboardButton(
-                                    text="Updates 📡", url="https://t.me/IDNCoder"
+                                    text="Channel", url="https://t.me/HaotogelOfficialLivedraw"
                                 ),
                             ]
                         ],
