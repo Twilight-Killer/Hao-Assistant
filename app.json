@@ -1,6 +1,7 @@
+
 {
-  "name": "ZeldrisRobot",
-  "description": "Telegram group management bot.",
+  "name": "Haotogel-Assistant",
+  "description": "Telegram group management bot HAOTOGEL LIVEDRAW.",
   "logo": "https://telegra.ph/file/016628a91c2d0ed99c3cf.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +10,9 @@
     "manager",
     "Zeldris"
   ],
-  "repository": "https://github.com/IDN-C-X/ZeldrisRobot.git",
-  "website": "https://idn-c-x.github.io",
-  "success_url": "t.me/IDNCoder",
+  "repository": "https://github.com/Twilight-Killer/ZeldrisRobot",
+  "website": "https://bit.ly/Haotogel-OfficiaI",
+  "success_url": "t.me/DarkiezZzz",
   "addons": [
     {
       "options": {
